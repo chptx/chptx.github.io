@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Octopress | My Octopress Blog]]></title>
+  <title><![CDATA[Category: octopress | My Octopress Blog]]></title>
   <link href="http://chptx.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://chptx.github.io/"/>
-  <updated>2014-11-17T15:09:13+08:00</updated>
+  <updated>2014-11-17T15:19:24+08:00</updated>
   <id>http://chptx.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Post for Octopress Test!]]></title>
+    <title type="html"><![CDATA[Post for octopress test!]]></title>
     <link href="http://chptx.github.io/blog/2014/11/17/post-for-octopress-test/"/>
     <updated>2014-11-17T14:18:05+08:00</updated>
     <id>http://chptx.github.io/blog/2014/11/17/post-for-octopress-test</id>
