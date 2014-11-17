@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | My Octopress Blog]]></title>
+  <link href="http://chptx.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://chptx.github.io/"/>
+  <updated>2014-11-17T15:06:38+08:00</updated>
+  <id>http://chptx.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Post for Octopress Test!]]></title>
+    <link href="http://chptx.github.io/blog/2014/11/17/post-for-octopress-test/"/>
+    <updated>2014-11-17T14:18:05+08:00</updated>
+    <id>http://chptx.github.io/blog/2014/11/17/post-for-octopress-test</id>
+    <content type="html"><![CDATA[<p>setup &amp; work with Octopress</p>
+
+<!--more-->
+
+
+<p><div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="lineno"> 1</span> git clone git://github.com/imathis/octopress.git octopress
+<span class="lineno"> 2</span> <span class="nb">cd </span>octopress&lt;/p&gt;
+<span class="lineno"> 3</span> 
+<span class="lineno"> 4</span> &lt;p&gt;gem install bundler
+<span class="lineno"> 5</span> rbenv rehash
+<span class="lineno"> 6</span> bundle install&lt;/p&gt;
+<span class="lineno"> 7</span> 
+<span class="lineno"> 8</span> &lt;p&gt;rake install&lt;/p&gt;
+<span class="lineno"> 9</span> 
+<span class="lineno">10</span> &lt;p&gt;rake setup_github_pages&lt;/p&gt;
+<span class="lineno">11</span> 
+<span class="lineno">12</span> &lt;p&gt;rake generate
+<span class="lineno">13</span> rake deploy&lt;/p&gt;
+<span class="lineno">14</span> 
+<span class="lineno">15</span> &lt;p&gt;git add .
+<span class="lineno">16</span> git commit -m <span class="p">&amp;</span>lsquo<span class="p">;</span>your message<span class="p">&amp;</span>rsquo<span class="p">;</span>
+<span class="lineno">17</span> git push origin <span class="nb">source</span>&lt;/p&gt;
+<span class="lineno">18</span> 
+<span class="lineno">19</span> &lt;p&gt;rake new_post&lt;/p&gt;
+<span class="lineno">20</span> 
+<span class="lineno">21</span> &lt;p&gt;rake new_page&lt;/p&gt;
+<span class="lineno">22</span> 
+<span class="lineno">23</span> &lt;p&gt;rake generate&lt;/p&gt;
+<span class="lineno">24</span> 
+<span class="lineno">25</span> &lt;p&gt;rake deploy&lt;/p&gt;
+<span class="lineno">26</span> 
+<span class="lineno">27</span> &lt;p&gt;</code></pre></div></p>
+
+<ul>
+<li><a href="http://jekyllrb.com/docs/posts/">posts syntax</a></li>
+<li><a href="http://octopress.org/docs/blogging">Octopress posts</a></li>
+<li><a href="http://pygments.org/docs/lexers/">Pygments Lexers</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
