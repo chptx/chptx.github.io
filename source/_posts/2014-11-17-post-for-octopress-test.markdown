@@ -4,6 +4,7 @@ title: "Post for octopress test!"
 date: 2014-11-17 14:18:05 +0800
 author: chptx
 comments: true
+description: Steps about setup & work with Octopress
 categories: Octopress
 ---
 
