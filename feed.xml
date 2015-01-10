@@ -15,7 +15,7 @@ http://chptx.me/
 This blog is awesome
 </description>
 <lastBuildDate>
-Sat, 10 Jan 2015 22:32:51 +0800
+Sat, 10 Jan 2015 22:49:06 +0800
 </lastBuildDate>
 <author>
 chptx
@@ -31,7 +31,7 @@ http://chptx.me/posts/17-11-2014-post-for-octopress-test.html
 Post for octopress test!
 </title>
 <description>
-&lt;h3&gt;&lt;a name=&quot;setup&amp;#95;&amp;&amp;#95;work&amp;#95;with&amp;#95;octopress&quot;&gt;&lt;/a&gt;setup &amp; work with Octopress&lt;/h3&gt;&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git clone git://github.com/imathis/octopress.git octopress
+&lt;h4&gt;&lt;a name=&quot;setup&amp;#95;&amp;&amp;#95;work&amp;#95;with&amp;#95;octopress&quot;&gt;&lt;/a&gt;setup &amp; work with Octopress&lt;/h4&gt;&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git clone git://github.com/imathis/octopress.git octopress
 cd octopress
 
 gem install bundler
