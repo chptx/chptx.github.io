@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
+<channel>
+<atom:link href='http://chptx.me/' rel='self' type='application/rss+xml'/>
+<generator>
+clj-rss
+</generator>
+<title>
+chptx's Blog
+</title>
+<link>
+http://chptx.me/
+</link>
+<description>
+This blog is awesome
+</description>
+<lastBuildDate>
+Sat, 10 Jan 2015 22:01:03 +0800
+</lastBuildDate>
+<author>
+chptx
+</author>
+<item>
+<guid>
+http://chptx.me/posts/13-11-2014-docs.html
+</guid>
+<link>
+http://chptx.me/posts/13-11-2014-docs.html
+</link>
+<title>
+Using Cryogen
+</title>
+<author>
+chptx
+</author>
+</item>
+<item>
+<guid>
+http://chptx.me/posts/10-10-2014-adoc-post.html
+</guid>
+<link>
+http://chptx.me/posts/10-10-2014-adoc-post.html
+</link>
+<title>
+Adoc Post
+</title>
+<author>
+chptx
+</author>
+</item>
+</channel>
+</rss>

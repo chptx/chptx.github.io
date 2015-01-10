@@ -1,26 +1,115 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>http://chptx.github.io/blog/2014/11/17/post-for-octopress-test/</loc>
-    <lastmod>2014-11-17T14:18:05+08:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chptx.github.io/</loc>
-    <lastmod>2014-11-18T03:49:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>http://chptx.github.io/blog/archives/</loc>
-    <lastmod>2014-11-18T03:49:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>http://chptx.github.io/blog/categories/</loc>
-    <lastmod>2014-11-18T03:49:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url>
+<loc>
+http://chptx.me/index.html
+</loc>
+<lastmod>
+2015-01-10
+</lastmod>
+</url>
+<url>
+<loc>
+http://chptx.me/pages/adoc-page.html
+</loc>
+<lastmod>
+2015-01-10
+</lastmod>
+</url>
+<url>
+<loc>
+http://chptx.me/pages/another-page.html
+</loc>
+<lastmod>
+2015-01-10
+</lastmod>
+</url>
+<url>
+<loc>
+http://chptx.me/pages/about.html
+</loc>
+<lastmod>
+2015-01-10
+</lastmod>
+</url>
+<url>
+<loc>
+http://chptx.me/archives.html
+</loc>
+<lastmod>
+2015-01-10
+</lastmod>
+</url>
+<url>
+<loc>
+http://chptx.me/404.html
+</loc>
+<lastmod>
+2015-01-10
+</lastmod>
+</url>
+<url>
+<loc>
+http://chptx.me/posts/13-11-2014-docs.html
+</loc>
+<lastmod>
+2015-01-10
+</lastmod>
+</url>
+<url>
+<loc>
+http://chptx.me/posts/11-04-2014-second-post.html
+</loc>
+<lastmod>
+2015-01-10
+</lastmod>
+</url>
+<url>
+<loc>
+http://chptx.me/posts/10-10-2014-adoc-post.html
+</loc>
+<lastmod>
+2015-01-10
+</lastmod>
+</url>
+<url>
+<loc>
+http://chptx.me/posts/10-03-2014-first-post.html
+</loc>
+<lastmod>
+2015-01-10
+</lastmod>
+</url>
+<url>
+<loc>
+http://chptx.me/tags/not fetch.html
+</loc>
+<lastmod>
+2015-01-10
+</lastmod>
+</url>
+<url>
+<loc>
+http://chptx.me/tags/very fetch.html
+</loc>
+<lastmod>
+2015-01-10
+</lastmod>
+</url>
+<url>
+<loc>
+http://chptx.me/tags/cryogen.html
+</loc>
+<lastmod>
+2015-01-10
+</lastmod>
+</url>
+<url>
+<loc>
+http://chptx.me/tags/asciidoc.html
+</loc>
+<lastmod>
+2015-01-10
+</lastmod>
+</url>
 </urlset>
