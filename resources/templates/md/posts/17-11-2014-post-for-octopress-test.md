@@ -2,7 +2,7 @@
  :layout :post
  :tags  ["blog"]}
 
-### setup & work with Octopress
+#### setup & work with Octopress
 
 <!--more-->
 
