@@ -15,11 +15,56 @@ http://chptx.me/
 This blog is awesome
 </description>
 <lastBuildDate>
-Sat, 10 Jan 2015 22:01:03 +0800
+Sat, 10 Jan 2015 22:32:51 +0800
 </lastBuildDate>
 <author>
 chptx
 </author>
+<item>
+<guid>
+http://chptx.me/posts/17-11-2014-post-for-octopress-test.html
+</guid>
+<link>
+http://chptx.me/posts/17-11-2014-post-for-octopress-test.html
+</link>
+<title>
+Post for octopress test!
+</title>
+<description>
+&lt;h3&gt;&lt;a name=&quot;setup&amp;#95;&amp;&amp;#95;work&amp;#95;with&amp;#95;octopress&quot;&gt;&lt;/a&gt;setup &amp; work with Octopress&lt;/h3&gt;&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git clone git://github.com/imathis/octopress.git octopress
+cd octopress
+
+gem install bundler
+rbenv rehash
+bundle install
+
+rake install
+
+rake setup&amp;#95;github&amp;#95;pages
+
+rake generate
+rake deploy
+
+git add .
+git commit -m 'your message'
+git push origin source
+
+rake new&amp;#95;post
+
+rake new&amp;#95;page
+
+rake generate
+
+rake deploy 
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='http://jekyllrb.com/docs/posts/'&gt;posts syntax&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='http://octopress.org/docs/blogging'&gt;Octopress posts&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='http://pygments.org/docs/lexers/'&gt;Pygments Lexers&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+</description>
+<pubDate>
+Mon, 17 Nov 2014 00:00:00 +0800
+</pubDate>
+<author>
+chptx
+</author>
+</item>
 <item>
 <guid>
 http://chptx.me/posts/13-11-2014-docs.html
