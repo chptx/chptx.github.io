@@ -1,6 +1,6 @@
 {:title "Yet Another Post"
  :layout :post
- :tags  ["very fetch"]}
+ :tags  ["second post"]}
 
 ### This Post So Fetch
 
