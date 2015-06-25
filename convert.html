@@ -18,9 +18,7 @@
     }
 
     iframe {
-	width: 1px;
-	min-width: 100%;
-	*width: 100%;
+	min-width: 100vw;
 	border: none;
 	position: absolute;
 	left: 0;
@@ -28,7 +26,7 @@
 	padding-top: 48px;
 	height: 100%;
 	z-index: -1;
-	overflow: visible;
+	overflow: scroll;
     }
 
 
@@ -59,8 +57,21 @@
 	}
 
 	function init() {
-		document.getElementById("bar").innerText = "http://"+getQueryParams(document.location.search).url;
+		document.getElementById("bar").innerText = "正在浏览http://"+getQueryParams(document.location.search).url;
 		document.getElementById("content").src = "http://"+getQueryParams(document.location.search).url;
+	}
+
+	function autoResize(id){
+		var newheight;
+		var newwidth;
+
+		if(document.getElementById){
+			newheight=document.getElementById(id).contentWindow.document .body.scrollHeight;
+			newwidth=document.getElementById(id).contentWindow.document .body.scrollWidth;
+		}
+
+		document.getElementById(id).height= (newheight) + "px";
+		document.getElementById(id).width= (newwidth) + "px";
 	}
 
   </script>
@@ -69,7 +80,7 @@
         <div id="bar">
 		http://sina.com
 	</div>
-	<iframe id="content" scrolling="yes" allowfullscreen></iframe>
+	<iframe id="content" scrolling="yes" onLoad="autoResize('content');"></iframe>
   </div>
 </body>
 </html>
