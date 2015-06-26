@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>浏览</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <style>
     body {
 	margin: 0;
@@ -75,6 +75,12 @@
 	}
 
 	function init() {
+		var u = getQueryParams(document.location.search).url;
+		console.log(u);
+		if (/shopbop.com$/.test(u)) {
+			console.log("site is shopbop.com");
+			document.getElementById("viewport").setAttribute("content", "width=1100");
+		}
 		document.getElementById("bar").innerText = "正在浏览http://"+getQueryParams(document.location.search).url;
 		document.getElementById("content").src = "http://"+getQueryParams(document.location.search).url;
 	}
