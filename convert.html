@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>浏览</title>
   <style>
     body {
@@ -17,18 +18,25 @@
 	z-index: 2;
     }
 
-    iframe {
-	min-width: 100%;
+    #ctnr {
+	min-width: 1px;
+	*width: 100%;
+	width: 100vw;
 	border: none;
 	position: absolute;
 	left: 0;
 	top: 0;
 	padding-top: 48px;
-	height: 100%;
+	min-height: 100%;
+	height: 100vh;
 	z-index: -1;
-	overflow: scroll;
+	overflow: hidden;
     }
 
+    iframe {
+	min-width: 100%;
+	min-height: 100%;
+    }
 
     #nav {
 	position: relative;
@@ -80,7 +88,9 @@
         <div id="bar">
 		http://sina.com
 	</div>
-	<iframe id="content" scrolling="yes"></iframe>
+	<div id="ctnr">
+	  <iframe id="content" scrolling="yes"></iframe>
+        </div>
   </div>
 </body>
 </html>
