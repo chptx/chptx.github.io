@@ -16,7 +16,7 @@
 	height: 48px;
 	background: #119aef;
 	position: fixed;
-	z-index: 2;
+	z-index: 250;
     }
 
     #ctnr {
@@ -35,8 +35,15 @@
     }
 
     iframe {
+	overflow: scroll;
 	padding-top: 48px;
-	z-index: 1;
+	height:100%;
+	width:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: none;
+	z-index: 0;
 	-webkit-overflow-scrolling: touch;
     }
 
@@ -89,7 +96,9 @@
 <body onload="init()">
 <div id="bar">浏览..</div>
 <!--<iframe id="content" scrolling="yes"></iframe>-->
-  <iframe id="content" src="" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
+<div id="ctnr">
+  <iframe id="content" src="" frameborder="0" height="100%" width="100%"></iframe>
+  </div>
 
 </body>
 </html>
