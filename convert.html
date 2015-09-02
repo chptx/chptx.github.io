@@ -3,11 +3,101 @@
 <head>
   <meta charset="utf-8">
   <title>浏览</title>
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <style>
+	.vytmn_container iframe {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		min-width: 100%;
+		height: 100%;
+		overflow: scroll;
+		margin: 0;
+		padding: 0;
+		border: none;
+		z-index: 9999;
+	}
+
+	.vytmn_container.ios {
+		position: relative;
+		-webkit-overflow-scrolling: touch; 
+	}
+
+	.vytmn_container.ios iframe {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		min-width: 100%;
+		overflow: scroll;
+		margin: 0;
+		padding: 0;
+		border: none;
+		z-index: 9999;
+	}
+
+  </style>
+  <script language="javascript">
+	function getQueryParams(qs) {
+		qs = qs.split('+').join(' ');
+
+		var params = {},
+			tokens,
+		re = /[?&]?([^=]+)=([^&]*)/g;
+
+		while (tokens = re.exec(qs)) {
+			params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+		}
+
+		return params;
+	}
+
+	function init() {
+		var u = getQueryParams(document.location.search).url;
+		console.log(u);
+		//if (/shopbop.com$/.test(u)) {
+		//	console.log("site is shopbop.com");
+		//	document.getElementById("viewport").setAttribute("content", "width=1100");
+		//}
+		document.getElementById("bar").innerText = "正在浏览http://"+getQueryParams(document.location.search).url;
+		document.getElementById("iframe").src = "http://"+getQueryParams(document.location.search).url;
+
+		var iFrameID = document.getElementById('iframe').contentWindow.document;
+		var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+		if (iOS)
+		{
+			iFrameID.addClass('ios');
+		} else {
+			document.getElementById('iframe').attr("scrolling", "yes");
+			document.getElementById('iframe').attr("src", document.getElementById('iframe').attr("src"));
+		}
+	}
+
+	function autoResize(id){
+		var newheight;
+		var newwidth;
+
+		if(document.getElementById){
+			newheight=document.getElementById(id).contentWindow.document .body.scrollHeight;
+			newwidth=document.getElementById(id).contentWindow.document .body.scrollWidth;
+		}
+
+		document.getElementById(id).height= (newheight) + "px";
+		document.getElementById(id).width= (newwidth) + "px";
+	}
+
+  </script>
 </head>
-<body>
+<body onload="init()">
 <div id="bar">浏览..</div>
-<div id="ctnr">
-  <iframe id="content" src="" frameborder="0" height="100%" width="100%"></iframe>
+<!--<iframe id="content" scrolling="yes"></iframe>-->
+<div class="vytmn_container">
+	<!-- <iframe id="content" src="" frameborder="0" height="100%" width="100%"></iframe>-->
+  <iframe id="iframe" class="vytmn-frame" width="300" frameborder="0" noresize="noresize" scrolling="no"></iframe>
+
   </div>
 
 </body>
